@@ -12,4 +12,19 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    // ⭐ เพิ่มส่วนนี้สำหรับ Production
+    build: {
+        manifest: true,
+        outDir: 'public/build',
+        rollupOptions: {
+            output: {
+                manualChunks: undefined,
+            },
+        },
+    },
+    // ⭐ สำหรับ HTTPS/Production
+    server: {
+        https: false,
+        host: true,
+    },
 });
