@@ -363,4 +363,214 @@
             });
         });
     </script>
+
+
+<style>
+    /* Product Slider Container */
+.product-slider-container {
+    background-color: rgb(151, 172, 186);
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+/* Scrollable Product List */
+.product-slider-scroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    
+    /* ซ่อน scrollbar แต่ยังเลื่อนได้ */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.product-slider-scroll::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+}
+
+/* เงาฟุ้งๆ ขอบซ้าย-ขวา */
+.product-slider-container::before,
+.product-slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s ease; /* ⭐ เพิ่มบรรทัดนี้ */
+}
+
+.product-slider-container::before {
+    left: 0;
+    background: linear-gradient(to right, 
+        rgba(151, 172, 186, 0.9) 0%, 
+        rgba(151, 172, 186, 0) 100%);
+}
+
+.product-slider-container::after {
+    right: 0;
+    background: linear-gradient(to left, 
+        rgba(151, 172, 186, 0.9) 0%, 
+        rgba(151, 172, 186, 0) 100%);
+}
+
+/* ⭐ เพิ่มส่วนนี้ - ซ่อนเงาเมื่อปุ่มหาย */
+.product-slider-container.hide-left-shadow::before {
+    opacity: 0;
+}
+
+.product-slider-container.hide-right-shadow::after {
+    opacity: 0;
+}
+
+/* ปุ่มเลื่อน */
+.slider-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 3;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.slider-nav-btn:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.slider-nav-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.slider-nav-prev {
+    left: 10px;
+}
+
+.slider-nav-next {
+    right: 10px;
+}
+
+/* Product Card */
+.product-card {
+    width: 160px;
+    flex: 0 0 auto;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-card-img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover .product-card-img {
+    transform: scale(1.05);
+}
+
+/* Product Info Container */
+.product-info {
+    padding: 0.25rem;
+    line-height: 1.7;
+    font-size: 14px;
+    height: 100px;
+}
+
+/* Product Name */
+.product-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* ⭐ เพิ่มบรรทัดนี้ */
+    line-height: 1.5;
+}
+
+/* Product Price */
+.product-price {
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(224, 82, 0);
+    font-size: 16px;
+}
+
+/* Product Rating */
+.product-rating {
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: rgb(224, 161, 0);
+}
+
+/* View More Link */
+.product-view-more {
+    width: 160px;
+    flex: 0 0 auto;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #212529;
+    color: white;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.product-view-more:hover {
+    background-color: #000;
+    transform: translateY(-5px);
+}
+
+.link-product{
+    text-decoration: none;
+    color:gray;
+}
+</style>
 @endsection
