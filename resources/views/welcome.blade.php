@@ -561,7 +561,7 @@
 
 /* Base styles for category items */
 .category-item {
-    margin: 0.5rem 0.75rem; /* เพิ่มระยะซ้าย-ขวา */
+    margin: 0.5rem 1.5rem; /* เพิ่มระยะซ้าย-ขวา */
     flex: 0 0 auto;
 }
 
