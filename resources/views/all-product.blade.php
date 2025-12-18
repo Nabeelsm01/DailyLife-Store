@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'หน้าแรกของเว็บไซต์')
 @section('head')
-    @vite('resources/css/product-slider.css')
+
 @endsection
 @section('content')
     <div class="d-flex flex-row p-3 bg-white rounded-3 ">
