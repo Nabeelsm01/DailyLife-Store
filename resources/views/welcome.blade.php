@@ -57,7 +57,7 @@
 
     {{-- catagori --}}
 <div class="p-1 bg-white rounded-3 my-2">
-    <div class="d-flex flex-row flex-wrap pb-1 justify-content-start">
+    <div class="d-flex flex-row flex-wrap pb-1 justify-content-center">
 
         <a href="{{ route('all-product', ['category' => 'food']) }}" style="text-decoration:none; color:gray;" class="category-item">
         <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
