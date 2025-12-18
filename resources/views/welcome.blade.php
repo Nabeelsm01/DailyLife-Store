@@ -56,7 +56,7 @@
     <hr class="border border-white border-2 rounded my-0">
 
     {{-- catagori --}}
-<div class="p-1 bg-white rounded-3 my-2">
+<div class="p-1 pl-3 bg-white rounded-3 my-2">
     <div class="d-flex flex-row flex-wrap pb-1 justify-content-start">
 
         <a href="{{ route('all-product', ['category' => 'food']) }}" style="text-decoration:none; color:gray;" class="category-item">
@@ -561,7 +561,7 @@
 
 /* Base styles for category items */
 .category-item {
-    margin: 0.5rem 1.5rem; /* เพิ่มระยะซ้าย-ขวา */
+    margin: 0.5rem 0.5rem; /* เพิ่มระยะซ้าย-ขวา */
     flex: 0 0 auto;
 }
 
