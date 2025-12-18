@@ -56,151 +56,137 @@
     <hr class="border border-white border-2 rounded my-0">
 
     {{-- catagori --}}
-    <div class="p-1 py-3 bg-white rounded-3 my-2">
-        <div class="d-flex flex-row pb-3">
+<div class="p-1 py-3 bg-white rounded-3 my-2">
+    <div class="d-flex flex-row flex-wrap pb-3 justify-content-start">
 
-            <a href="{{ route('all-product', ['category' => 'food']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="vegetable1.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">ผักสด</p>
+        <a href="{{ route('all-product', ['category' => 'food']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="vegetable1.gif" alt="" class="mb-0 category-icon">
             </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'general']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="grocery-basket1.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">ของทั่วไป</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'cloth']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="cloth.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">เสื้อผ้า</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'bag']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="bag.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">กระเป๋า</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'electric']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="electric.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class=" " style="font-size: 12.5px; margin-top:18px;">เครื่องใช้ไฟฟ้า</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'toy']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="toy.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">ของเล่น</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'it']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="device.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">ไอที</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'sport']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="sport.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">กีฬา</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'bike']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="bike.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">จักรยาน</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'shoe']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="shoe.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">รองเท้า</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'tool']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="tool.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">เครื่องมือ</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'furniture']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="furniture.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">เฟอร์นิเจอร์</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'cosmice']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="cosmice.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">สำอาง</p>
-            </div>
-            </a>
-
-            <a href="{{ route('all-product', ['category' => 'accessory']) }}" style="text-decoration:none; color:gray;">
-            <div class=" rounded-3 text-center mx-2" style="width:5vw; height:10vh; background-color:rgb(230, 245, 255);">
-                <div class="d-flex justify-content-center">
-                    <img src="accessory.gif" alt="" class="mb-0"
-                        style="width:60px; height:60px; object-fit:contain;">
-                </div>
-                <p class="mt-3 mb-0">ประดับ</p>
-            </div>
-            </a>
-
+            <p class="category-text">ผักสด</p>
         </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'general']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="grocery-basket1.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">ของทั่วไป</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'cloth']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="cloth.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">เสื้อผ้า</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'bag']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="bag.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">กระเป๋า</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'electric']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="electric.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text-small">เครื่องใช้ไฟฟ้า</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'toy']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="toy.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">ของเล่น</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'it']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="device.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">ไอที</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'sport']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="sport.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">กีฬา</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'bike']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="bike.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">จักรยาน</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'shoe']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="shoe.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">รองเท้า</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'tool']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="tool.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">เครื่องมือ</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'furniture']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="furniture.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">เฟอร์นิเจอร์</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'cosmice']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="cosmice.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">สำอาง</p>
+        </div>
+        </a>
+
+        <a href="{{ route('all-product', ['category' => 'accessory']) }}" style="text-decoration:none; color:gray;" class="category-item">
+        <div class="rounded-3 text-center category-box" style="background-color:rgb(230, 245, 255);">
+            <div class="d-flex justify-content-center">
+                <img src="accessory.gif" alt="" class="mb-0 category-icon">
+            </div>
+            <p class="category-text">ประดับ</p>
+        </div>
+        </a>
+
     </div>
+</div>
 
     {{-- โชว์สินค้ายอดนิยม --}}
     <div class="d-flex flex-row align-items-center">
@@ -571,6 +557,132 @@
 .link-product{
     text-decoration: none;
     color:gray;
+}
+
+/* Base styles for category items */
+.category-item {
+    margin: 0.5rem;
+    flex: 0 0 auto;
+}
+
+.category-box {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.category-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.category-text {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.category-text-small {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: 11px;
+}
+
+/* Mobile (xs) - 4 items per row */
+@media (max-width: 575.98px) {
+    .category-item {
+        flex: 0 0 calc(25% - 1rem);
+        margin: 0.5rem;
+    }
+    
+    .category-box {
+        width: 100%;
+        height: 90px;
+    }
+    
+    .category-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .category-text {
+        font-size: 11px;
+    }
+    
+    .category-text-small {
+        font-size: 9px;
+    }
+}
+
+/* Small tablets (sm) - 5 items per row */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .category-item {
+        flex: 0 0 calc(20% - 1rem);
+    }
+    
+    .category-box {
+        width: 100%;
+        height: 95px;
+    }
+    
+    .category-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .category-text {
+        font-size: 12px;
+    }
+    
+    .category-text-small {
+        font-size: 10px;
+    }
+}
+
+/* Tablets (md) - 7 items per row */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .category-item {
+        flex: 0 0 calc(14.28% - 1rem);
+    }
+    
+    .category-box {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .category-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Desktop (lg) - 10 items per row */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .category-item {
+        flex: 0 0 calc(10% - 1rem);
+    }
+    
+    .category-box {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+/* Large Desktop (xl) - keep original 14 items visible */
+@media (min-width: 1200px) {
+    .category-item {
+        flex: 0 0 calc(7.14% - 1rem);
+    }
+    
+    .category-box {
+        width: 100%;
+        min-width: 80px;
+    }
 }
 </style>
 @endsection
