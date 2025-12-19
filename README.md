@@ -2,7 +2,8 @@
 
 ระบบ E-commerce แบบครบวงจร สำหรับผู้ขายและผู้ซื้อ พัฒนาด้วย Laravel 12 และ Bootstrap 5
 
-![DailyLife Store](https://via.placeholder.com/800x400?text=DailyLife+Store+Screenshot)
+![Homepage](screenshots/homepage(1).png)
+![Homepage](screenshots/homepage(2).png)
 
 ## ✨ Features (ฟีเจอร์หลัก)
 
@@ -56,7 +57,7 @@
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/dailylife-store.git
+git clone https://github.com/nabeelsm01/dailylife-store.git
 cd dailylife-store
 ```
 
@@ -95,7 +96,7 @@ php artisan storage:link
 php artisan serve
 ```
 
-เปิดเบราว์เซอร์: `http://localhost:8000`
+เปิดเบราว์เซอร์:http://127.0.0.1:8000/
 
 ---
 
@@ -112,16 +113,39 @@ php artisan serve
 ## 📸 Screenshots (ภาพตัวอย่าง)
 
 ### หน้าแรก
-![Homepage](https://via.placeholder.com/600x400?text=Homepage)
+![Homepage](screenshots/homepage(1).png)
+![Homepage](screenshots/homepage(2).png)
 
 ### สินค้าทั้งหมด + ระบบกรอง
-![Products](https://via.placeholder.com/600x400?text=Products+with+Filters)
+![all_Product](screenshots/all_product(1).png)
+![all_Product](screenshots/all_product(2).png)
 
 ### รายละเอียดสินค้า + รีวิว
-![Product Detail](https://via.placeholder.com/600x400?text=Product+Detail)
+![Product Detail](screenshots/product_detail(1).png)
+![Product Detail](screenshots/product_detail(2).png)
+
+### รายละเอียดการสั่งซื้อ * ติดตามการสั่งซื้อ + ประวัติการสั่งซื้อ
+![order](screenshots/order(1).png)
+![order](screenshots/order(2).png)
+
+![track_order](screenshots/track_order(1).png)
+![track_order](screenshots/track_order(2).png)
+
+![history_order](screenshots/history_order(1).png)
+![history_order](screenshots/history_order(2).png)
+
+### รีวิว rating+comments
+![review](screenshots/review.png)
 
 ### Dashboard ผู้ขาย
-![Seller Dashboard](https://via.placeholder.com/600x400?text=Seller+Dashboard)
+![add_product](screenshots/add_product(1).png)
+![add_product](screenshots/add_product(2).png)
+
+![inorder](screenshots/inorder(seller)(1).png)
+![inorder](screenshots/inorder(seller)(2).png)
+
+![continue](screenshots/continue(seller)(2).png)
+![continue](screenshots/continue(seller)(2).png)
 
 ---
 
@@ -137,11 +161,11 @@ users (ผู้ใช้)
     ├── order_items
     ├── payments (การชำระเงิน)
     └── shippings (การจัดส่ง)
-
-carts (ตะกร้าสินค้า)
-```
-
----
+sellers(status) (ผู้ขาย)
+|__ myshops (ร้านของฉัน)
+    |__ manage_product(จัดการสินค้า เพิ่ม/ลบ/แก้ไข)
+    |__ manage_order(ตรวจสอบการสั่งซื้อ)
+     
 
 ## 🎯 API Endpoints (ถ้ามี)
 ```
@@ -189,8 +213,3 @@ Pull requests are welcome! For major changes, please open an issue first.
 - Laravel Framework
 - Bootstrap
 - Bootstrap Icons
-- และทุกคนที่สนับสนุน
-
----
-
-⭐ ถ้าชอบโปรเจคนี้ อย่าลืมกด Star ด้วยนะครับ!
